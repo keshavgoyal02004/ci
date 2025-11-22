@@ -33,4 +33,4 @@ jobs:
         uses: actions/checkout@v5
 
       - name: list repo content
-        uses: ls -R .
+        run: ls -R .
