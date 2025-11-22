@@ -10,3 +10,6 @@ jobs :
    steps :
    - name: Print a Message
      run: echo "Hello! A push detected in repo"
+    
+   - name: Check OS
+     run: cat /etc/os-release
