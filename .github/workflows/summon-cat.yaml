@@ -1,0 +1,36 @@
+name: Summoning Cats
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  summon-cats:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Summon 10 Cats
+        run: |
+          for i in {1..10}; do
+            echo "🐱  Meow #$i"
+          done
+
+      - name: Get Cats Ready
+        run: |
+          for i in {1..10}; do
+            echo "🐱 Meow #$i Ready"
+          done
+
+  deploying-cats:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: deploy cats
+        run: |
+          for i in {1..10}; do 
+            echo "🐱 Meow #$i Deployed"
+          done
