@@ -1,0 +1,36 @@
+name: System info
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  system-info:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: OS Info
+        run: uname -a
+
+      - name: list cpu
+        run: lscpu
+
+      - name: show memory
+        run: free -h
+
+      - name: list block device
+        run: lsblk
+
+  listfiles:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checking repo
+        uses: actions/checkout@v5
+
+      - name: list repo content
+        uses: ls -R .
