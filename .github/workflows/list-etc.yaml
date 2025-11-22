@@ -1,0 +1,12 @@
+name: ls etc
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  listetc:
+    - name: list etc
+      run: ls /etc
