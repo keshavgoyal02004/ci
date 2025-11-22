@@ -10,5 +10,6 @@ jobs:
   listetc:
     runs-on: ubuntu-latest
 
-    - name: list etc
-      run: ls /etc
+    steps:
+      - name: list etc
+        run: ls /etc
