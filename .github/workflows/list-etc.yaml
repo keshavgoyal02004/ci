@@ -8,5 +8,7 @@ on:
 jobs:
 
   listetc:
+    runs-on: ubuntu-latest
+
     - name: list etc
       run: ls /etc
